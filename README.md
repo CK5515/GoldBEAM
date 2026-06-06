@@ -2,7 +2,7 @@
 
 GoldBEAM is an elite, hyper-efficient structural genomics framework optimized for predicting high-resolution 2D chromatin contact maps from 1-Megabase genomic sequence windows. By decoupling long-range sequence processing from task-specific structural modeling, GoldBEAM establishes a new state-of-the-art accuracy floor on the Akita benchmark while operating at a fraction of the compute footprint required by traditional transformer architectures.
 
-## 🏆 Metric Scoreboard (Akita Benchmark)
+## Metric Scoreboard (Akita Benchmark)
 
 The following evaluations contrast the fully converged GoldBEAM pipeline against peer-reviewed long-context genomic foundation models fine-tuned on 1-Megabase 3D structural mapping tasks:
 
@@ -16,7 +16,7 @@ The following evaluations contrast the fully converged GoldBEAM pipeline against
 
 ---
 
-## 🛡️ Symmetrical Algorithmic Safeguards
+## Symmetrical Algorithmic Safeguards
 
 GoldBEAM's optimization and interpretability pipelines are protected by dual-layer computational guardrails that prevent the mathematical artifacts common in genomic deep learning:
 
@@ -25,7 +25,7 @@ GoldBEAM's optimization and interpretability pipelines are protected by dual-lay
 
 ---
 
-## 🔬 In Silico Mutagenesis & Verification Profiles
+## In Silico Mutagenesis & Verification Profiles
 
 ### 1. Experiment 1: Virtual Deletion Knockout (CTCF KO)
 By evaluating the wild-type loop activation spectrum through our margin exclusion mask, the model isolated a highly active interior loop anchor at **Bin 36 (~147.5 kb)**. Virtual ablation of this locus via neutral masking tokens (`N`) triggered an immediate, localized loss of chromatin contact along with a massive spike in the sliding-window directional insulation delta.
@@ -41,7 +41,7 @@ To test generative regulatory boundaries, a synthetic cluster consisting of thre
 
 ---
 
-## 🧬 Intrinsic Biophysical Property Alignment Mapping
+## Intrinsic Biophysical Property Alignment Mapping
 
 Instead of encoding structural instructions into uninterpretable hidden states, GoldBEAM's first-layer convolutional filters are strictly projected onto the raw physical periodicities and thermodynamic traits of the double helix. 
 
