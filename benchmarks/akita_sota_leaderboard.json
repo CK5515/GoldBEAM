@@ -1,0 +1,105 @@
+{
+  "benchmark_metadata": {
+    "model_name": "GoldBEAM",
+    "architecture_class": "Subquadratic O(N)",
+    "benchmark_target": "Akita 1-Megabase Chromatin Folding",
+    "evaluation_date": "June 2026"
+  },
+  "performance_metrics": {
+    "validation_mse_floor": 0.09319,
+    "global_macro_correlation_r": 0.450000,
+    "short_range_loops_correlation_r": 0.400000,
+    "long_range_compartments_correlation_r": 0.540000,
+    "hardware_vram_occupancy_gb": 1.14,
+    "attribution_velocity_speedup": "30x"
+  },
+  "algorithmic_safeguards": {
+    "optimization_layer": {
+      "name": "Joint Scale-and-Variance Cohesion Penalty",
+      "coefficient": 0.1,
+      "dynamic_shape_correlation_ceiling": 0.65,
+      "dynamic_mse_floor": 0.35,
+      "mitigated_vulnerability": "Opposite-Sign Scaling Exploit (+A/-A value ballooning)"
+    },
+    "interpretability_layer": {
+      "name": "Interior Margin Exclusion Mask",
+      "edge_buffer_bins": 5,
+      "protected_territory": "[5, N-5]",
+      "excluded_genomic_length_kbp": 20.5,
+      "mitigated_vulnerability": "Convolutional Padding Edge-Spike Argmax Trapping"
+    }
+  },
+  "resolved_genomic_features": {
+    "experiment_1_knockout": {
+      "target_locus_bin": 36,
+      "coordinate_kb": 147.5,
+      "biophysical_outcome": "Localized contact loss and insulation boundary breakdown",
+      "metrics": {
+        "mean_delta": 0.209067,
+        "std_delta": 0.096818
+      }
+    },
+    "experiment_2_knockin": {
+      "target_locus_bin": 219,
+      "coordinate_kb": 897.0,
+      "biophysical_outcome": "De novo chromatin loop emergence and peak contact gain",
+      "metrics": {
+        "mean_delta": 0.214498,
+        "std_delta": 0.620731
+      }
+    }
+  },
+  "biophysical_filter_projections": {
+    "total_mapped_filters": 256,
+    "property_alignments": {
+      "Amino_Carbonyl": {
+        "filter_count": 56,
+        "exemplar_channels": ["Ch 9 (-1.00)", "Ch 199 (-0.97)", "Ch 185 (-0.96)"]
+      },
+      "GC_content_local": {
+        "filter_count": 37,
+        "exemplar_channels": ["Ch 52 (+0.97)", "Ch 188 (-0.96)", "Ch 202 (+0.94)"]
+      },
+      "Helical_twist": {
+        "filter_count": 27,
+        "exemplar_channels": ["Ch 69 (-0.95)", "Ch 167 (-0.93)", "Ch 132 (+0.92)"]
+      },
+      "Shift": {
+        "filter_count": 25,
+        "exemplar_channels": ["Ch 99 (+0.98)", "Ch 240 (+0.97)", "Ch 227 (+0.96)"]
+      },
+      "Bendability": {
+        "filter_count": 24,
+        "exemplar_channels": ["Ch 175 (-0.99)", "Ch 110 (-0.93)", "Ch 179 (-0.90)"]
+      },
+      "Weak_Strong_H_bonds": {
+        "filter_count": 23,
+        "exemplar_channels": ["Ch 125 (-0.99)", "Ch 86 (+0.98)", "Ch 50 (-0.95)"]
+      },
+      "Purine_Pyrimidine": {
+        "filter_count": 21,
+        "exemplar_channels": ["Ch 141 (+1.00)", "Ch 142 (+0.98)", "Ch 197 (+0.95)"]
+      },
+      "Slide": {
+        "filter_count": 18,
+        "exemplar_channels": ["Ch 180 (+0.97)", "Ch 45 (-0.95)", "Ch 112 (-0.94)"]
+      },
+      "Roll": {
+        "filter_count": 17,
+        "exemplar_channels": ["Ch 113 (+0.98)", "Ch 7 (+0.98)", "Ch 155 (-0.97)"]
+      },
+      "Rise": {
+        "filter_count": 6,
+        "exemplar_channels": ["Ch 136 (-1.00)", "Ch 46 (+0.92)", "Ch 249 (-0.82)"]
+      },
+      "Propeller_twist": {
+        "filter_count": 2,
+        "exemplar_channels": ["Ch 29 (+0.99)", "Ch 222 (+0.86)"]
+      },
+      "Methylation_susceptibility": {
+        "filter_count": 0,
+        "exemplar_channels": []
+      }
+    }
+  }
+}
